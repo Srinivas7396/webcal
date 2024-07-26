@@ -1,0 +1,24 @@
+
+<web-app>
+<servlet>
+    <servlet-name>SaveCalculation</servlet-name>
+    <servlet-class>c1.SaveCalculation</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SaveCalculation</servlet-name>
+    <url-pattern>/SaveCalculation</url-pattern>
+</servlet-mapping>
+
+
+
+ <servlet>
+        <servlet-name>DeleteRowsServlet</servlet-name>
+        <servlet-class>c1.DeleteRowsServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteRowsServlet</servlet-name>
+        <url-pattern>/DeleteRowsServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

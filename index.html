@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calstyle.css">
+</head>
+<body>
+
+<div class="navbar"> 
+   
+       <div class="hamburger" onclick="toggleNavbar()">&#9776;</div>
+    <div class="nav-item" onclick="showTrigCalculator()">Trigonometry</div>
+    
+    <div class="nav-item" onclick="showHistory()">History</div>
+     <div class="nav-item" onclick="clearHistory()">Clear History</div>
+    
+   
+</div>
+
+<div class="container">
+    
+        <div class="item" id="homecalculator-fixed">
+            <div id="display"></div>
+            <div id="calculator">
+                <button class="numButton" onclick="appendToDisplay('1')">1</button>
+                <button class="numButton" onclick="appendToDisplay('2')">2</button>
+                <button class="numButton" onclick="appendToDisplay('3')">3</button>
+                <button class="opButton" onclick="appendToDisplay('+')">+</button>
+                <button class="numButton" onclick="appendToDisplay('4')">4</button>
+                <button class="numButton" onclick="appendToDisplay('5')">5</button>
+                <button class="numButton" onclick="appendToDisplay('6')">6</button>
+                <button class="opButton" onclick="appendToDisplay('-')">-</button>
+                <button class="numButton" onclick="appendToDisplay('7')">7</button>
+                <button class="numButton" onclick="appendToDisplay('8')">8</button>
+                <button class="numButton" onclick="appendToDisplay('9')">9</button>
+                <button class="opButton" onclick="appendToDisplay('*')">*</button>
+                <button class="numButton" onclick="appendToDisplay('0')">0</button>
+                <button class="opButton" onclick="appendToDisplay('/')">/</button>
+                <button class="numButton calculator-buttons" onclick="appendToDisplay('(')">(</button>
+                <button class="numButton calculator-buttons" onclick="appendToDisplay(')')">)</button>
+                <button id="eqButton">=</button>
+                <button class="clearButton" style="background-color:red;">C</button>
+                <button id="backspaceButton">&lt;X</button>
+               
+                <button id="opButton" onclick="appendToDisplay('.')">.</button>
+            </div>
+        </div>
+   
+
+   <div class="trigcalitem item" id="secondpart">
+        <div id="trigCalculator" >
+            <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('sin(')">sin</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('cos(')">cos</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('tan(')">tan</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('asin(')">asin</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('acos(')">acos</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('atan(')">atan</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('sinh(')">sinh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('cosh(')">cosh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('tanh(')">tanh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('asinh(')">asinh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('acosh(')">acosh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('atanh(')">atanh</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('sqrt(')">sqrt</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('log(')">log</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('ln(')">ln</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('sec(')">sec</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('csc(')">csc</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('cot(')">cot</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('asec(')">asec</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('acsc(')">acsc</button>
+    <button class="trigButton trig-calculator-buttons" onclick="appendToDisplay('acot(')">acot</button>
+        </div>
+</div>
+  
+  
+  <div id="historyContainer" style="display: none;">
+   
+    <div id="historyDisplay">History:</div>
+    <div id="historyContent"></div>
+</div>      
+    </div>
+
+
+<script src="calscript.js">
+</script>
+
+
+</body>
+</html>
